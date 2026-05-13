@@ -134,7 +134,8 @@ object Lid: EntryStartup {
         ) {
             lenovo(ctxt)
         }
-        if(Tools.vendorFpLow.startsWith("Cat/S22FLIP/S22FLIP".lowercase())) {
+        if(Tools.vendorFpLow.startsWith("Cat/S22FLIP/S22FLIP".lowercase()) ||
+            Tools.vendorFpLow.startsWith("S22/S22FLIP/S22FLIP".lowercase())) {
             cat(ctxt)
         }
         if(Tools.vendorFpLow.startsWith("hi6250".lowercase()) ||
